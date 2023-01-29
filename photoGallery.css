@@ -39,3 +39,6 @@ body {
 	text-align: center;
 }
 
+.text:hover::after {
+	content: "Let yourself rule the dream"
+}
