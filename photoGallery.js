@@ -8,4 +8,3 @@ onmouseout = function offChangeText() {
 	document.getElementById('box').innerHTML='Range Rover collection';
 }
 
-
