@@ -3,30 +3,28 @@ body {
 }
 
 .container {
-	max-width: auto 100%;
-}
-
-.gallery {
 	display: flex;
-	flex-wrap: wrap;
-	gap: 75px;
 }
 
-.gallery__photo {
+.card {
 	flex: 1;
-	width: 200px;
-	background-position: center;
-	background-repeat: no-repeat;
-	transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+	overflow: hidden;
+	transition: all .6s cubic-bezier(.25, .4, .45, 1.4);
 }
 
-.gallery div:hover {
-	flex: 5;
+.card img {
+	object-fit: cover;
+	filter: grayscale(1);
+	height: 500px;
+	border-radius: 10px;
 }
 
-.photo {
-	height: 400px;
-	border-radius: 15px;
+.card:hover {
+	flex: 2;
+}
+
+.card:hover img {
+	filter: none;
 }
 
 .text {
@@ -37,4 +35,5 @@ body {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	text-align: center;
+	justify-content: center;
 }
